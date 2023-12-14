@@ -4,6 +4,8 @@ The National Library of Sweden / KB Lab releases two pretrained multitask models
 A language specific model for Swedish is not included in the core models as of the latest release (v2.3.2), so we publish our own models trained within the spaCy framework.  
 The models include a part-of-speech tagger, dependency parser and named entity recognition. We trained two separate models for Universal POS tags ([UPOS](https://universaldependencies.org/u/pos/)) and Language Specific POS tags ([XPOS](https://universaldependencies.org/sv/index.html)), as spaCy does not allow for joint training of both. 
 
+** **UPDATE decembar 2023** **: The models are only available here https://huggingface.co/KBLab/swedish-spacy-pipeline/tree/main
+
 ** **UPDATE February 2021** **: We are adding two transformer-based models trained in spaCy 3.0. They are available to download at the same link given below.  
 One model is a complete pipeline with UPOS tagger, parser, sentencer, ner and lemmatizer (sv_pipeline-0.0.0.tar.gz). Unfortunately the lemmatizer is not yet trainable in spaCy, so the performance is as good as the quality of the rules/lookup tables available for Swedish (i.e. not very good). If you need a Swedish lemmatizer we advise you for the moment to have a look at [Stanza](https://stanfordnlp.github.io/stanza/), [efselab](https://github.com/robertostling/efselab/blob/master/README.md) or [lemmy](https://github.com/sorenlind/lemmy).  
 The other model is a XPOS tagger in case you need language-specific part-of-speech tags (sv_tagger-0.0.0.tar.gz).  
